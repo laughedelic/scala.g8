@@ -19,3 +19,10 @@ developers := List(Developer(
 scalaVersion := "2.12.4"
 
 libraryDependencies ++= Seq()
+
+releaseEarlyWith := BintrayPublisher
+releaseEarlyEnableSyncToMaven := false
+releaseEarlyNoGpg := true
+
+publishMavenStyle := true
+bintrayReleaseOnPublish := !isSnapshot.value
