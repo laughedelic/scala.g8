@@ -22,5 +22,6 @@ data/out/
 .atom*
 .ensime*
 .idea*
+.metals*
 
 ignore.sbt
